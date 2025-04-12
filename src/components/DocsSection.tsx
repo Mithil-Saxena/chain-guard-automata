@@ -35,20 +35,20 @@ const DocsSection = () => {
             <Card className="bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6">
               <div className="flex items-center mb-6">
                 <FileText size={24} className="text-chainGuard-purple mr-2" />
-                <h3 className="text-xl font-semibold">Quick Start Guide</h3>
+                <h3 className="text-xl font-semibold text-[#eee]">Quick Start Guide</h3>
               </div>
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-medium mb-2">1. Connect your wallet</h4>
-                  <p className="text-gray-400 mb-4">
+                  <h4 className="font-medium mb-2 text-[#eee]">1. Connect your wallet</h4>
+                  <p className="text-gray-300 mb-4">
                     ChainGuard works with MetaMask, WalletConnect, and other popular Ethereum wallets.
                   </p>
                   <div className="code-block">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs text-gray-500">JavaScript</span>
+                      <span className="text-xs text-gray-300">JavaScript</span>
                       <button 
-                        className="text-gray-500 hover:text-white"
+                        className="text-gray-300 hover:text-white"
                         onClick={() => copyToClipboard(`import { ChainGuard } from '@chainGuard/sdk';
 
 const chainGuard = new ChainGuard();
@@ -57,7 +57,7 @@ await chainGuard.connectWallet();`)}
                         <Copy size={14} />
                       </button>
                     </div>
-                    <pre>
+                    <pre className="text-[#eee]">
                       {`import { ChainGuard } from '@chainGuard/sdk';
 
 const chainGuard = new ChainGuard();
@@ -67,15 +67,15 @@ await chainGuard.connectWallet();`}
                 </div>
                 
                 <div>
-                  <h4 className="font-medium mb-2">2. Create a stop-loss trigger</h4>
-                  <p className="text-gray-400 mb-4">
+                  <h4 className="font-medium mb-2 text-[#eee]">2. Create a stop-loss trigger</h4>
+                  <p className="text-gray-300 mb-4">
                     Define your trading parameters including the asset, trigger price, and amount.
                   </p>
                   <div className="code-block">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs text-gray-500">JavaScript</span>
+                      <span className="text-xs text-gray-300">JavaScript</span>
                       <button 
-                        className="text-gray-500 hover:text-white"
+                        className="text-gray-300 hover:text-white"
                         onClick={() => copyToClipboard(`const triggerParams = {
   asset: "ETH",
   triggerPrice: "1450", // in USD
@@ -89,7 +89,7 @@ console.log("Trigger deployed:", trigger.address);`)}
                         <Copy size={14} />
                       </button>
                     </div>
-                    <pre>
+                    <pre className="text-[#eee]">
                       {`const triggerParams = {
   asset: "ETH",
   triggerPrice: "1450", // in USD
@@ -104,15 +104,15 @@ console.log("Trigger deployed:", trigger.address);`}
                 </div>
                 
                 <div>
-                  <h4 className="font-medium mb-2">3. Monitor and manage your triggers</h4>
-                  <p className="text-gray-400 mb-4">
+                  <h4 className="font-medium mb-2 text-[#eee]">3. Monitor and manage your triggers</h4>
+                  <p className="text-gray-300 mb-4">
                     Track the status of your triggers and manage them through the dashboard.
                   </p>
                   <div className="code-block">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs text-gray-500">JavaScript</span>
+                      <span className="text-xs text-gray-300">JavaScript</span>
                       <button 
-                        className="text-gray-500 hover:text-white"
+                        className="text-gray-300 hover:text-white"
                         onClick={() => copyToClipboard(`// Get all active triggers for the connected wallet
 const activeTriggers = await chainGuard.getActiveTriggers();
 
@@ -122,7 +122,7 @@ await chainGuard.cancelTrigger(trigger.address);`)}
                         <Copy size={14} />
                       </button>
                     </div>
-                    <pre>
+                    <pre className="text-[#eee]">
                       {`// Get all active triggers for the connected wallet
 const activeTriggers = await chainGuard.getActiveTriggers();
 
@@ -146,17 +146,17 @@ await chainGuard.cancelTrigger(trigger.address);`}
             <Card className="bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6">
               <div className="flex items-center mb-6">
                 <Terminal size={24} className="text-chainGuard-purple mr-2" />
-                <h3 className="text-xl font-semibold">Code Examples</h3>
+                <h3 className="text-xl font-semibold text-[#eee]">Code Examples</h3>
               </div>
               
               <div className="space-y-8">
                 <div>
-                  <h4 className="font-medium mb-2">ETH/USD Stop Loss Example</h4>
+                  <h4 className="font-medium mb-2 text-[#eee]">ETH/USD Stop Loss Example</h4>
                   <div className="code-block">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs text-gray-500">JavaScript</span>
+                      <span className="text-xs text-gray-300">JavaScript</span>
                       <button 
-                        className="text-gray-500 hover:text-white"
+                        className="text-gray-300 hover:text-white"
                         onClick={() => copyToClipboard(`import { ChainGuard } from '@chainGuard/sdk';
 
 async function createEthStopLoss() {
@@ -183,7 +183,7 @@ createEthStopLoss().catch(console.error);`)}
                         <Copy size={14} />
                       </button>
                     </div>
-                    <pre>
+                    <pre className="text-[#eee]">
                       {`import { ChainGuard } from '@chainGuard/sdk';
 
 async function createEthStopLoss() {
@@ -211,18 +211,18 @@ createEthStopLoss().catch(console.error);`}
                 </div>
                 
                 <div>
-                  <h4 className="font-medium mb-2">Multiple Price Conditions</h4>
-                  <p className="text-gray-400 mb-4">
+                  <h4 className="font-medium mb-2 text-[#eee]">Multiple Price Conditions</h4>
+                  <p className="text-gray-300 mb-4">
                     Create more complex triggers with multiple price conditions.
                   </p>
                   <div className="code-block">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs text-gray-500">JavaScript</span>
-                      <button className="text-gray-500 hover:text-white">
+                      <span className="text-xs text-gray-300">JavaScript</span>
+                      <button className="text-gray-300 hover:text-white">
                         <Copy size={14} />
                       </button>
                     </div>
-                    <pre>
+                    <pre className="text-[#eee]">
                       {`import { ChainGuard } from '@chainGuard/sdk';
 
 async function createComplexTrigger() {
@@ -277,7 +277,7 @@ createComplexTrigger().catch(console.error);`}
             <Card className="bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6">
               <div className="flex items-center mb-6">
                 <Terminal size={24} className="text-chainGuard-purple mr-2" />
-                <h3 className="text-xl font-semibold">API Reference</h3>
+                <h3 className="text-xl font-semibold text-[#eee]">API Reference</h3>
               </div>
               
               <div className="space-y-6">
@@ -290,11 +290,11 @@ createComplexTrigger().catch(console.error);`}
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="bg-green-600 text-white text-xs px-2 py-1 rounded">POST</div>
-                      <code className="text-sm">/api/v1/triggers</code>
+                      <code className="text-sm text-[#eee]">/api/v1/triggers</code>
                     </div>
-                    <p className="text-gray-400 text-sm mb-2">Create a new price trigger</p>
+                    <p className="text-gray-300 text-sm mb-2">Create a new price trigger</p>
                     <div className="code-block">
-                      <pre>
+                      <pre className="text-[#eee]">
                         {`// Request
 {
   "asset": "ETH",
@@ -321,11 +321,11 @@ createComplexTrigger().catch(console.error);`}
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="bg-blue-600 text-white text-xs px-2 py-1 rounded">GET</div>
-                      <code className="text-sm">/api/v1/triggers</code>
+                      <code className="text-sm text-[#eee]">/api/v1/triggers</code>
                     </div>
-                    <p className="text-gray-400 text-sm mb-2">List all triggers for the authenticated wallet</p>
+                    <p className="text-gray-300 text-sm mb-2">List all triggers for the authenticated wallet</p>
                     <div className="code-block">
-                      <pre>
+                      <pre className="text-[#eee]">
                         {`// Response
 {
   "status": "success",
@@ -362,14 +362,14 @@ createComplexTrigger().catch(console.error);`}
             <Card className="bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6">
               <div className="flex items-center mb-6">
                 <BookOpen size={24} className="text-chainGuard-purple mr-2" />
-                <h3 className="text-xl font-semibold">SDK Reference</h3>
+                <h3 className="text-xl font-semibold text-[#eee]">SDK Reference</h3>
               </div>
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-medium mb-2">Installation</h4>
+                  <h4 className="font-medium mb-2 text-[#eee]">Installation</h4>
                   <div className="code-block">
-                    <pre>
+                    <pre className="text-[#eee]">
                       {`npm install @chainGuard/sdk
 
 # or with yarn
@@ -379,45 +379,45 @@ yarn add @chainGuard/sdk`}
                 </div>
                 
                 <div>
-                  <h4 className="font-medium mb-2">Core Methods</h4>
+                  <h4 className="font-medium mb-2 text-[#eee]">Core Methods</h4>
                   
                   <div className="bg-chainGuard-charcoal rounded-md p-4 mb-4">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h5 className="font-medium">connectWallet()</h5>
-                        <p className="text-gray-400 text-sm">Connects to the user's Ethereum wallet</p>
+                        <h5 className="font-medium text-[#eee]">connectWallet()</h5>
+                        <p className="text-gray-300 text-sm">Connects to the user's Ethereum wallet</p>
                       </div>
-                      <div className="text-xs text-gray-500">Promise&lt;void&gt;</div>
+                      <div className="text-xs text-gray-300">Promise&lt;void&gt;</div>
                     </div>
                   </div>
                   
                   <div className="bg-chainGuard-charcoal rounded-md p-4 mb-4">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h5 className="font-medium">createTrigger(params)</h5>
-                        <p className="text-gray-400 text-sm">Creates a new price trigger</p>
+                        <h5 className="font-medium text-[#eee]">createTrigger(params)</h5>
+                        <p className="text-gray-300 text-sm">Creates a new price trigger</p>
                       </div>
-                      <div className="text-xs text-gray-500">Promise&lt;Trigger&gt;</div>
+                      <div className="text-xs text-gray-300">Promise&lt;Trigger&gt;</div>
                     </div>
                   </div>
                   
                   <div className="bg-chainGuard-charcoal rounded-md p-4 mb-4">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h5 className="font-medium">getActiveTriggers()</h5>
-                        <p className="text-gray-400 text-sm">Returns all active triggers for the connected wallet</p>
+                        <h5 className="font-medium text-[#eee]">getActiveTriggers()</h5>
+                        <p className="text-gray-300 text-sm">Returns all active triggers for the connected wallet</p>
                       </div>
-                      <div className="text-xs text-gray-500">Promise&lt;Trigger[]&gt;</div>
+                      <div className="text-xs text-gray-300">Promise&lt;Trigger[]&gt;</div>
                     </div>
                   </div>
                   
                   <div className="bg-chainGuard-charcoal rounded-md p-4">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h5 className="font-medium">cancelTrigger(triggerId)</h5>
-                        <p className="text-gray-400 text-sm">Cancels a specific trigger</p>
+                        <h5 className="font-medium text-[#eee]">cancelTrigger(triggerId)</h5>
+                        <p className="text-gray-300 text-sm">Cancels a specific trigger</p>
                       </div>
-                      <div className="text-xs text-gray-500">Promise&lt;boolean&gt;</div>
+                      <div className="text-xs text-gray-300">Promise&lt;boolean&gt;</div>
                     </div>
                   </div>
                 </div>
