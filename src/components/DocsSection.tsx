@@ -26,22 +26,22 @@ const DocsSection = () => {
         <Tabs className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8 bg-chainGuard-purple p-1 rounded-lg">
   <TabsTrigger 
     value="quickstart" 
-    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    className="text-black font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
     Quickstart
   </TabsTrigger>
   <TabsTrigger 
     value="examples" 
-    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    className="text-black font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
     Examples
   </TabsTrigger>
   <TabsTrigger 
     value="api" 
-    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    className="text-black font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
     API
   </TabsTrigger>
   <TabsTrigger 
     value="sdk" 
-    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    className="text-black font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
     SDK
   </TabsTrigger>
 </TabsList>
