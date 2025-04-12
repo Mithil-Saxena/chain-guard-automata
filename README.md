@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/59314690-db31-4f58-8b30-e09cf59c7ca1) and start prompting.
+Simply visit the ((https://chain-guard-automata.lovable.app/)) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
