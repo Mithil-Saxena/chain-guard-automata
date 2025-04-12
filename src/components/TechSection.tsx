@@ -70,7 +70,7 @@ const TechSection = () => {
                       <div className="h-16 w-16 rounded-full bg-chainGuard-purple/20 flex items-center justify-center mb-4">
                         {step.icon}
                       </div>
-                      <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-[#eee]">{step.title}</h3>
                       <p className="text-gray-400">{step.description}</p>
                     </div>
                   </Card>
@@ -87,7 +87,7 @@ const TechSection = () => {
       
       <div className="container mx-auto max-w-6xl mt-24">
         <div className="gradient-border bg-chainGuard-dark/60 p-8 backdrop-blur-sm">
-          <h3 className="text-xl font-semibold mb-4">Technical Implementation</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#eee]">Technical Implementation</h3>
           
           <div className="code-block mb-6">
             <pre>
@@ -144,18 +144,18 @@ contract ChainGuardTrigger {
             </pre>
           </div>
           
-          <h3 className="text-xl font-semibold mb-4">Testnet Deployments</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#eee]">Testnet Deployments</h3>
           <p className="text-gray-300 mb-4">
             ChainGuard is currently deployed on the following testnets:
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-chainGuard-charcoal rounded-md p-4">
-              <h4 className="font-medium mb-2">Arbitrum Goerli</h4>
+              <h4 className="font-medium mb-2 text-[#eee]">Arbitrum Goerli</h4>
               <p className="text-xs font-mono text-gray-400">0x7a9d...8f21</p>
             </div>
             <div className="bg-chainGuard-charcoal rounded-md p-4">
-              <h4 className="font-medium mb-2">Base Goerli</h4>
+              <h4 className="font-medium mb-2 text-[#eee]">Base Goerli</h4>
               <p className="text-xs font-mono text-gray-400">0xf239...4e72</p>
             </div>
           </div>
