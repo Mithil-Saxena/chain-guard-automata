@@ -23,33 +23,28 @@ const DocsSection = () => {
           </p>
         </div>
         
-        <Tabs defaultValue="quickstart" className="w-full">
-  <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8 bg-slate-800 p-1 rounded-lg">
-    <TabsTrigger
-  value="quickstart"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
->
-  Quickstart
-</TabsTrigger>
-<TabsTrigger
-  value="examples"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
->
-  Examples
-</TabsTrigger>
-<TabsTrigger
-  value="api"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
->
-  API
-</TabsTrigger>
-<TabsTrigger
-  value="sdk"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
->
-  SDK
-</TabsTrigger>
-  </TabsList>
+        <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8 bg-chainGuard-purple p-1 rounded-lg">
+  <TabsTrigger 
+    value="quickstart" 
+    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    Quickstart
+  </TabsTrigger>
+  <TabsTrigger 
+    value="examples" 
+    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    Examples
+  </TabsTrigger>
+  <TabsTrigger 
+    value="api" 
+    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    API
+  </TabsTrigger>
+  <TabsTrigger 
+    value="sdk" 
+    className="text-gray-300 font-bold bg-chainGuard-purple hover:bg-[#d6bbfc] data-[state=active]:bg-[#d6bbfc] py-2 rounded-md shadow-md">
+    SDK
+  </TabsTrigger>
+</TabsList>
           
           <TabsContent value="quickstart">
             <Card className="bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6">
