@@ -17,12 +17,14 @@ const Index = () => {
   return (
     <div className="parallax-container">
       <Navbar />
-      <HeroSection />
-      <FeaturesSection />
-      <DemoSection />
-      <TechSection />
-      <DocsSection />
-      <Footer />
+      <div className="content">
+        <HeroSection />
+        <FeaturesSection />
+        <DemoSection />
+        <TechSection />
+        <DocsSection />
+        <Footer />
+      </div>
     </div>
   );
 };
