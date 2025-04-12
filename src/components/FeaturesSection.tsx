@@ -22,7 +22,7 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => (
       {icon}
     </div>
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-400">{description}</p>
+    <p className="text-[#eee]">{description}</p>
   </Card>
 );
 
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="gradient-text">Key Features</span>
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-[#eee] max-w-2xl mx-auto">
             ChainGuard leverages blockchain technology to provide secure and automated trading solutions that execute directly on-chain.
           </p>
         </div>
