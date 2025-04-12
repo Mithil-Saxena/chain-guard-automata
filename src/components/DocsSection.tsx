@@ -27,25 +27,25 @@ const DocsSection = () => {
   <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8 bg-slate-800 p-1 rounded-lg">
     <TabsTrigger
   value="quickstart"
-  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#3b3c36] border border-chainGuard-purple/50"
 >
   Quickstart
 </TabsTrigger>
 <TabsTrigger
   value="examples"
-  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#3b3c36] border border-chainGuard-purple/50"
 >
   Examples
 </TabsTrigger>
 <TabsTrigger
   value="api"
-  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#3b3c36] border border-chainGuard-purple/50"
 >
   API
 </TabsTrigger>
 <TabsTrigger
   value="sdk"
-  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-[#080808] font-bold bg-chainGuard-purple hover:bg-[#3b3c36] border border-chainGuard-purple/50"
 >
   SDK
 </TabsTrigger>
