@@ -24,32 +24,32 @@ const DocsSection = () => {
         </div>
         
         <Tabs defaultValue="quickstart" className="w-full">
-  <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8 bg-slate-800 p-1 rounded-lg">
-    <TabsTrigger
+          <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8">
+            <TabsTrigger
   value="quickstart"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-white bg-blue-600 hover:bg-blue-700"
 >
   Quickstart
 </TabsTrigger>
 <TabsTrigger
   value="examples"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-white bg-blue-600 hover:bg-blue-700"
 >
   Examples
 </TabsTrigger>
 <TabsTrigger
   value="api"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-white bg-blue-600 hover:bg-blue-700"
 >
   API
 </TabsTrigger>
 <TabsTrigger
   value="sdk"
-  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+  className="text-white bg-blue-600 hover:bg-blue-700"
 >
   SDK
 </TabsTrigger>
-  </TabsList>
+          </TabsList>
           
           <TabsContent value="quickstart">
             <Card className="bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6">
