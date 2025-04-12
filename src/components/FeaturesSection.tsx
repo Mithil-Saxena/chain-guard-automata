@@ -21,7 +21,7 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => (
     <div className="h-12 w-12 rounded-lg bg-chainGuard-purple/20 flex items-center justify-center mb-4">
       {icon}
     </div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <h3 className="text-xl font-semibold mb-2 text-[#eee]">{title}</h3>
     <p className="text-[#eee]">{description}</p>
   </Card>
 );
