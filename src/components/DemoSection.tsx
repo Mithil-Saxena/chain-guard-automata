@@ -97,8 +97,8 @@ const DemoSection = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Demo Visualization */}
-          <Card className="relative bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6 lg:p-8">
-            <h3 className="text-xl font-semibold mb-6">Stop-Loss Demo</h3>
+          <Card className="relative bg-chainGuard-dark/80 border border-chainGuard-purple/30 p-6 lg:p-8 text-gray-200">
+           <h3 className="text-xl font-semibold mb-6 text-gray-200">Stop-Loss Demo</h3>
             
             <div className="min-h-[300px] flex flex-col items-center justify-center">
               {activeStep === 0 && (
