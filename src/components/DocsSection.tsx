@@ -25,26 +25,30 @@ const DocsSection = () => {
         
         <Tabs defaultValue="quickstart" className="w-full">
   <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8 bg-slate-800 p-1 rounded-lg">
-    <TabsTrigger 
-      value="quickstart" 
-      className="text-white bg-indigo-600 hover:bg-indigo-500 data-[state=active]:bg-indigo-500 font-medium py-2 rounded-md shadow-md">
-      Quickstart
-    </TabsTrigger>
-    <TabsTrigger 
-      value="examples" 
-      className="text-white bg-indigo-600/70 hover:bg-indigo-500 data-[state=active]:bg-indigo-500 font-medium py-2 rounded-md shadow-md">
-      Examples
-    </TabsTrigger>
-    <TabsTrigger 
-      value="api" 
-      className="text-white bg-indigo-600/70 hover:bg-indigo-500 data-[state=active]:bg-indigo-500 font-medium py-2 rounded-md shadow-md">
-      API
-    </TabsTrigger>
-    <TabsTrigger 
-      value="sdk" 
-      className="text-white bg-indigo-600/70 hover:bg-indigo-500 data-[state=active]:bg-indigo-500 font-medium py-2 rounded-md shadow-md">
-      SDK
-    </TabsTrigger>
+    <TabsTrigger
+  value="quickstart"
+  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+>
+  Quickstart
+</TabsTrigger>
+<TabsTrigger
+  value="examples"
+  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+>
+  Examples
+</TabsTrigger>
+<TabsTrigger
+  value="api"
+  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+>
+  API
+</TabsTrigger>
+<TabsTrigger
+  value="sdk"
+  className="text-[#f5f5f5] font-bold bg-chainGuard-purple hover:bg-[#E6E6FA] border border-chainGuard-purple/50"
+>
+  SDK
+</TabsTrigger>
   </TabsList>
           
           <TabsContent value="quickstart">
