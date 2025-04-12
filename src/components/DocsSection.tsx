@@ -25,30 +25,10 @@ const DocsSection = () => {
         
         <Tabs defaultValue="quickstart" className="w-full">
           <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto mb-8">
-            <TabsTrigger
-  value="quickstart"
-  className="text-white bg-blue-600 hover:bg-blue-700"
->
-  Quickstart
-</TabsTrigger>
-<TabsTrigger
-  value="examples"
-  className="text-white bg-blue-600 hover:bg-blue-700"
->
-  Examples
-</TabsTrigger>
-<TabsTrigger
-  value="api"
-  className="text-white bg-blue-600 hover:bg-blue-700"
->
-  API
-</TabsTrigger>
-<TabsTrigger
-  value="sdk"
-  className="text-white bg-blue-600 hover:bg-blue-700"
->
-  SDK
-</TabsTrigger>
+            <TabsTrigger value="quickstart" className="text-white bg-blue-600 hover:bg-blue-700"> Quickstart </TabsTrigger>
+            <TabsTrigger value="examples" className="text-white bg-blue-600 hover:bg-blue-700"> Examples </TabsTrigger>
+            <TabsTrigger value="api" className="text-white bg-blue-600 hover:bg-blue-700">  API</TabsTrigger>
+            <TabsTrigger value="sdk" className="text-white bg-blue-600 hover:bg-blue-700">  SDK</TabsTrigger>
           </TabsList>
           
           <TabsContent value="quickstart">
